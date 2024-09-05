@@ -1,0 +1,205 @@
+/****     media query for screen sizes below 600px********/
+
+.header-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/hero_image1.JPG");
+    background-repeat: no-repeat;
+    background-size: auto 80rem;
+    background-position:center;
+    overflow: hidden;
+    text-align: center;
+    
+
+}
+
+.header-container:hover {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-image: url("../images/hero_image1.JPG");
+}
+
+.business-logo{
+    width: 6rem;
+    height: 4rem;
+    opacity: 0.8;
+}
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    text-align: center;
+}
+
+h2, p{
+    text-align: center;
+}
+.top-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%
+}
+.humburger{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(191, 11%, 81%);
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    right: 0;
+}
+
+.humburger span{
+    display: flex;
+    width: 100%;
+    height: 0.3rem;
+    background-color: hsl(40, 67%, 4%);
+    margin: 0.2rem;
+    
+}
+
+.bottom-header{
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.bottom-header.active{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 5px black;
+
+}
+
+.close-humburger{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1rem;
+    height: 1rem;
+    margin-top: -8em;
+    background-color: hsl(191, 11%, 81%);
+    padding: 0.1rem;
+    
+}
+
+.close-humburger:hover{
+    background-color: hsl(0, 93%, 48%);
+}
+
+.xspan1{
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    right: 0;
+    transform: rotate(45deg);
+    background-color: hsl(40, 67%, 4%);
+
+}
+
+.xspan2{
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    left: 0;
+    transform: rotate(-45deg);
+    background-color: hsl(40, 67%, 4%);
+
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid goldenrod;
+    padding: 1rem;
+}
+
+div{
+    width: 100%;
+}
+
+div img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: burlywood;
+    color: white;
+    text-align: center;
+}
+
+
+/****     media query for screen sizes betweeen 600px and 768px********/
+
+
+
+/****     media query for screen sizes betweeen 768px and 992px********/
+
+
+
+/****     media query for screen sizes for 992px and above********/
+
+
+
+
