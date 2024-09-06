@@ -23,9 +23,10 @@
     color: white;
     text-shadow: 0 0 6px black;
     padding: 0.5rem;
-    backdrop-filter: blur(5px);
-    bottom: 0;
+    backdrop-filter: blur(15px);
+    bottom: 2rem;
     border-radius: 10rem;
+    opacity: 0.7;
 }
 
 .header-container:hover {
@@ -83,18 +84,17 @@ h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: hsl(191, 11%, 81%);
     width: 2rem;
     height: 2rem;
     top: 0;
-    right: 0;
+    right: 0.4rem;
 }
 
 .humburger span{
     display: flex;
     width: 100%;
     height: 0.3rem;
-    background-color: hsl(40, 67%, 4%);
+    background-color: hsl(0, 0%, 98%);
     margin: 0.2rem;
     
 }
@@ -215,13 +215,609 @@ footer{
 
 /****     media query for screen sizes betweeen 600px and 768px********/
 
+@media  screen and (min-width:600px) and (max-width:768px){
+
+    .header-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../images/hero1.webp");
+        background-repeat: no-repeat;
+        background-size: auto 80rem;
+        background-position:center;
+        overflow: hidden;
+        text-align: center;
+        
+
+    }
+
+    .business-name{
+        position: absolute;
+        color: white;
+        text-shadow: 0 0 6px black;
+        padding: 0.5rem;
+        backdrop-filter: blur(5px);
+        bottom: 2rem;
+        border-radius: 10rem;
+        font-size: 2.5rem;
+    }
+
+    .header-container:hover {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        background-image: url("../images/hero1.webp");
+    }
+
+    .business-logo{
+        width: 9rem;
+        height: 7rem;
+        opacity: 0.8;
+    }
+
+    header{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        top: 0;
+        text-align: center;
+    }
+
+    h2, p{
+        text-align: center;
+        
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+
+    .top-header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%
+    }
+    .humburger{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 2rem;
+        height: 2rem;
+        top: 0;
+        right: 0;
+    }
+
+    .humburger span{
+        display: flex;
+        width: 100%;
+        height: 0.3rem;
+        background-color: hsl(40, 67%, 4%);
+        margin: 0.2rem;
+        
+    }
+
+    .bottom-header{
+        position: relative;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin-top: -1rem;
+        backdrop-filter: blur(15px)
+    }
+
+    .bottom-header.active{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-left: 1rem;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 0 5px black;
+
+    }
+
+    .close-humburger{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 1rem;
+        height: 1rem;
+        margin-top: -8em;
+        background-color: hsl(191, 11%, 81%);
+        padding: 0.1rem;
+        
+    }
+
+    .close-humburger:hover{
+        background-color: hsl(0, 93%, 48%);
+    }
+
+    .xspan1{
+        position: absolute;
+        width: 100%;
+        height: 0.2rem;
+        right: 0;
+        transform: rotate(45deg);
+        background-color: hsl(40, 67%, 4%);
+
+    }
+
+    .xspan2{
+        position: absolute;
+        width: 100%;
+        height: 0.2rem;
+        left: 0;
+        transform: rotate(-45deg);
+        background-color: hsl(40, 67%, 4%);
+
+    }
+
+    section{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    section div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        border: 2px solid goldenrod;
+        padding: 1rem;
+    }
+
+    div{
+        width: 100%;
+    }
+
+    div img{
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: burlywood;
+        color: white;
+        text-align: center;
+    }
+
+}
 
 
 /****     media query for screen sizes betweeen 768px and 992px********/
 
 
+@media  screen and (min-width:768px) and (max-width:992px){
+
+    .header-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../images/hero1.webp");
+        background-repeat: no-repeat;
+        background-size: auto 80rem;
+        background-position:center;
+        overflow: hidden;
+        text-align: center;
+        
+
+    }
+
+    .business-name{
+        position: absolute;
+        color: white;
+        text-shadow: 0 0 6px black;
+        padding: 0.8rem;
+        backdrop-filter: blur(20px);
+        bottom: 1rem;
+        border-radius: 10rem;
+        font-size: 2.8rem;
+        opacity: 0.7;
+    }
+
+    .header-container:hover {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        background-image: url("../images/hero1.webp");
+    }
+
+    .business-logo{
+        width: 9rem;
+        height: 7rem;
+        opacity: 0.8;
+    }
+
+    header{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        top: 0;
+        text-align: center;
+    }
+
+    h2, p{
+        text-align: center;
+        
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+
+    .top-header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%
+    }
+    .humburger{
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 2rem;
+        height: 2rem;
+        top: 0;
+        right: 0;
+    }
+
+    .humburger span{
+        display: flex;
+        width: 100%;
+        height: 0.3rem;
+        background-color: hsl(40, 67%, 4%);
+        margin: 0.2rem;
+        
+    }
+
+    .bottom-header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        backdrop-filter: blur(15px)
+    }
+
+    nav{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        right: 1rem;
+        top: -2rem;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 0 5px black;
+        font-size: 1.2rem;
+
+
+    }
+    nav a:hover{
+        text-decoration: underline;
+    }
+
+    .close-humburger:hover{
+        background-color: hsl(0, 93%, 48%);
+    }
+
+    div.services-wrapper{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr;
+        gap: 2rem;
+        overflow: hidden;
+    }
+
+    .image-container{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .image-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    section div{
+        border: 0;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: burlywood;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+
 
 /****     media query for screen sizes for 992px and above********/
+
+
+@media  screen and (min-width:992px){
+
+    .header-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../images/hero1.webp");
+        background-repeat: no-repeat;
+        background-size: auto 80rem;
+        background-position:center;
+        overflow: hidden;
+        text-align: center;
+        
+
+    }
+
+    .business-name{
+        position: absolute;
+        color: white;
+        text-shadow: 0 0 6px black;
+        padding: 0.8rem;
+        backdrop-filter: blur(20px);
+        bottom: 1rem;
+        border-radius: 10rem;
+        font-size: 2.8rem;
+        opacity: 0.7;
+    }
+
+    .header-container:hover {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        background-image: url("../images/hero1.webp");
+    }
+
+    .business-logo{
+        width: 9rem;
+        height: 7rem;
+        opacity: 0.8;
+    }
+
+    header{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        top: 0;
+        text-align: center;
+    }
+
+    h2, p{
+        text-align: center;
+        
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+
+    .top-header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%
+    }
+    .humburger{
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 2rem;
+        height: 2rem;
+        top: 0;
+        right: 0;
+    }
+
+    .humburger span{
+        display: flex;
+        width: 100%;
+        height: 0.3rem;
+        background-color: hsl(40, 67%, 4%);
+        margin: 0.2rem;
+        
+    }
+
+    .bottom-header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        backdrop-filter: blur(15px)
+    }
+
+    nav{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        right: 1rem;
+        top: -2rem;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 0 5px black;
+        font-size: 1.2rem;
+
+
+    }
+    nav a:hover{
+        text-decoration: underline;
+    }
+
+    .close-humburger:hover{
+        background-color: hsl(0, 93%, 48%);
+    }
+
+    div.services-wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-flow: row;
+        gap: 4rem;
+        overflow: hidden;
+    }
+
+    .image-container{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .image-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    section div{
+        border: 0;
+    }
+
+    .post1, .post2, .post3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 2rem;
+    }
+
+    .post1 .image-container, .post2 .image-container, .post3 .image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: auto;
+    }
+
+    .testimony-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: burlywood;
+        color: white;
+        text-align: center;
+    }
+
+}
+
 
 
 
