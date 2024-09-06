@@ -619,6 +619,10 @@ footer{
 
 @media  screen and (min-width:992px){
 
+    body{
+        overflow-x: hidden;
+    }
+
     .header-container{
         position: relative;
         display: flex;
@@ -659,8 +663,8 @@ footer{
     }
 
     .business-logo{
-        width: 9rem;
-        height: 7rem;
+        width: 13rem;
+        height: 9rem;
         opacity: 0.8;
     }
 
@@ -726,7 +730,6 @@ footer{
         align-items: center;
         flex-direction: row;
         width: 100%;
-        backdrop-filter: blur(15px)
     }
 
     nav{
@@ -737,7 +740,8 @@ footer{
         flex-direction: row;
         width: 100%;
         right: 1rem;
-        top: -2rem;
+        top: -3rem;
+        backdrop-filter: blur(20px);
     }
     nav a{
         text-decoration: none;
@@ -751,8 +755,8 @@ footer{
         text-decoration: underline;
     }
 
-    .close-humburger:hover{
-        background-color: hsl(0, 93%, 48%);
+    .close-humburger{
+        display: none;
     }
 
     div.services-wrapper{
@@ -760,7 +764,7 @@ footer{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-flow: row;
         gap: 4rem;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .image-container{
@@ -770,6 +774,7 @@ footer{
         align-items: center;
         width: 20rem;
         height: 20rem;
+        overflow-x: hidden;
     }
 
     .image-container img{
@@ -788,6 +793,7 @@ footer{
         align-items: center;
         flex-direction: row;
         margin: 0 2rem;
+        overflow-x: hidden;
     }
 
     .post1 .image-container, .post2 .image-container, .post3 .image-container{
@@ -803,6 +809,7 @@ footer{
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        overflow-x: hidden;
     }
 
     footer{
@@ -814,6 +821,7 @@ footer{
         background-color: burlywood;
         color: white;
         text-align: center;
+        overflow-x: hidden;
     }
 
 }
