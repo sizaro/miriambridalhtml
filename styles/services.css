@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.service-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.service-content img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.service-content div {
+    max-width: 100%;
+}
+
+/* Mobile Styles */
+@media (min-width: 768px) {
+    
+/* Basic Styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-container {
+        background-color: #f5f5f5;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .business-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    nav ul li a.active {
+        font-weight: bold;
+        color: #000;
+    }
+
+    /* Main content styling */
+    .service-section {
+        padding: 40px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .service-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #444;
+    }
+
+    .service-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .service-content img {
+        width: 40%;
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+
+    .service-content div {
+        max-width: 60%;
+    }
+
+    .service-content p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+        color: #666;
+    }
+
+    /* Footer Styling */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer p {
+        margin: 5px 0;
+    }
+   
+}
+
