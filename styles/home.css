@@ -10,7 +10,7 @@
     height: 100vh;
     background-image: url("../images/hero1.webp");
     background-repeat: no-repeat;
-    background-size: auto 80rem;
+    background-size: cover;
     background-position:center;
     overflow: hidden;
     text-align: center;
@@ -27,15 +27,6 @@
     bottom: 2rem;
     border-radius: 10rem;
     opacity: 0.7;
-}
-
-.header-container:hover {
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    background-image: url("../images/hero1.webp");
 }
 
 .business-logo{
@@ -227,7 +218,7 @@ footer{
         height: 100vh;
         background-image: url("../images/hero1.webp");
         background-repeat: no-repeat;
-        background-size: auto 80rem;
+        background-size: cover;
         background-position:center;
         overflow: hidden;
         text-align: center;
@@ -244,15 +235,6 @@ footer{
         bottom: 2rem;
         border-radius: 10rem;
         font-size: 2.5rem;
-    }
-
-    .header-container:hover {
-        width: 100%;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:center;
-        background-image: url("../images/hero1.webp");
     }
 
     .business-logo{
@@ -447,7 +429,7 @@ footer{
         height: 100vh;
         background-image: url("../images/hero1.webp");
         background-repeat: no-repeat;
-        background-size: auto 80rem;
+        background-size: cover;
         background-position:center;
         overflow: hidden;
         text-align: center;
@@ -467,14 +449,6 @@ footer{
         opacity: 0.7;
     }
 
-    .header-container:hover {
-        width: 100%;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:center;
-        background-image: url("../images/hero1.webp");
-    }
 
     .business-logo{
         width: 9rem;
@@ -621,6 +595,7 @@ footer{
 
     body{
         overflow-x: hidden;
+        background-color: white
     }
 
     .header-container{
@@ -630,10 +605,10 @@ footer{
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         background-image: url("../images/hero1.webp");
         background-repeat: no-repeat;
-        background-size: auto 80rem;
+        background-size: cover;
         background-position:center;
         overflow: hidden;
         text-align: center;
@@ -651,15 +626,6 @@ footer{
         border-radius: 10rem;
         font-size: 2.8rem;
         opacity: 0.7;
-    }
-
-    .header-container:hover {
-        width: 100%;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:center;
-        background-image: url("../images/hero1.webp");
     }
 
     .business-logo{
@@ -785,6 +751,18 @@ footer{
 
     section div{
         border: 0;
+    }
+
+    .bridal-hair-styling{
+        box-shadow: 0px 1px 0px goldenrod;
+        background-color: rgb(254, 251, 251);;
+        padding: 1rem;
+    }
+
+    .bridal-hair-styling:hover{
+        box-shadow: 1px 2px 1px gold;
+        background-color: rgb(254, 245, 216);
+        padding: 1rem;
     }
 
     .post1, .post2, .post3{
