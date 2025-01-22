@@ -28,7 +28,7 @@ body{
     width: 100%;
 }
 
-li a.service{
+li a.services{
     text-decoration:3px underline var(--tiny1-color);
     padding-bottom: 1rem;
 }
@@ -243,13 +243,13 @@ section.services-view {
     font-size: 18px;
     font-weight: bold;
     margin: 10px;
-    color: #2c3e50;
+    color: var(--secondary-color);
 }
 
 .service-item p {
     font-size: 14px;
     margin: 10px;
-    color: #555;
+    color: var(--tiny1-color);
 }
 
 .service-item .more-button {
@@ -473,11 +473,11 @@ footer {
         }
     
         .service-item h2 {
-            font-size: 20px;
+            font-size: 1.5rem;
         }
     
         .service-item p {
-            font-size: 16px;
+            font-size: 1.2rem;
         }
     
         .masonry-gallery .image-container {

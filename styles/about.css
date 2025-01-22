@@ -62,6 +62,7 @@ header{
     color: var(--white);
     width: auto;
     text-align: center;
+    text-decoration: none;
 }
 
 
@@ -69,6 +70,7 @@ header{
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem 0.2rem;
+    text-decoration: none;
 }
 
 .business-logo {
@@ -208,67 +210,105 @@ main {
     overflow-x: hidden;
 }
 
+.about-us-section{
+    margin-top: 2rem;
+}
+
+.about-us-section p{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 5px 2px 5px var(--accent-color);
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
 
 /* About Us Section */
-.about-us-section{
+.our-movement {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 2rem 1rem 1rem 1rem;
+    overflow-x: hidden;
 }
 
-.our-movement{
+/* Mobile first (default block layout) */
+.mission-vision {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    column-count: 1;
-    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px var(--primary-color);
+    background-color: var(--tiny1-color);
+    border-radius: 10px;
 }
 
-.team-section{
+.our-movement .team-intro {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
     flex-direction: column;
+}
+
+.ourFounder-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    text-align: center;
+}
+
+.founder-image {
+    width: 100%;
+    height: auto;
+    margin-top: 0.8rem;
+    box-shadow: 0 0 15px var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.our-founder{
+    padding: 1rem;
+    box-shadow: 1px 2px 5px var(--secondary-color);
 }
 
 .work-force{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
 }
 
 .team-gallery{
     display: grid;
+    grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
+    gap: 10px;
+}
+
+h1, h2, h3, p{
     text-align: center;
 }
 
-.team-member{
-    text-align: center;
-    background-color: var(--secondary-color);
+h1, h2, h3{
+    text-decoration: underline var(--white);
+    margin-bottom: 0.5rem;
 }
 
-.team-member h3, .team-member p{
-    text-align: center;
-}
-
-.team-gallery img{
+.team-member img{
     width: 100%;
     height: auto;
-}
-
-.founder-image{
-    width: 100%;
-    height: auto;
+    padding: 0.5rem 0.8rem;
+    box-shadow: 0 0 10px var(--tiny-color);
+    margin-top: 1rem;
 }
 
 /* Footer */
@@ -415,47 +455,44 @@ footer {
         .business-name1:hover{
             border: 2px solid var(--secondary-color);
         }
+
+        .our-movement {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-template-rows: repeat(4, auto);
+            gap: 20px;
+        }
     
+        /* Left column: Founder and her story */
+        .team-intro {
+            grid-column: 1 / 2;
+            grid-row: 1 / 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     
-    .about-us-container {
-        padding: 2rem;
-    }
-
-    .about-us-container h1 {
-        font-size: 2rem;
-    }
-
-    .team-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .team-member {
-        margin: 1rem;
-        text-align: left;
-        width: 250px;
-    }
-
-    .our-movement{
-        gap: 20px;
-        column-count: 3;
-    }
-
+        .team-intro > div {
+            margin-bottom: 20px;
+        }
     
-.team-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-}
-
-
-.founder-image{
-    width: 80%;
-    height: auto;
-}
+        /* Right column: Mission, Vision, and Our Story */
+        .mission-vision {
+            grid-column: 2 / 3;
+            grid-row: 1 / 5;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+        }
+    
+        .mission,
+        .vision,
+        .team-description {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
 }
