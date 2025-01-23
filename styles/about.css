@@ -223,6 +223,11 @@ main {
     border-radius: 10px;
 }
 
+.about-us-section h1{
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+
 
 /* About Us Section */
 .our-movement {
@@ -246,9 +251,25 @@ main {
     flex-direction: column;
     margin-bottom: 20px;
     box-shadow: 0 0 10px var(--primary-color);
-    background-color: var(--tiny1-color);
+    border-radius: 10px;
+    color: var(--white);
+    gap: 10px;
+}
+
+.teamintro-description{
+    margin: 1rem 1rem;
+    padding: 1rem;
+    box-shadow:  0 0 7px var(--tiny1-color);
     border-radius: 10px;
 }
+.mission,
+        .vision,
+        .team-description {
+            padding: 5px;
+            background-color: var(--tiny1-color);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: var(--white);}
 
 .our-movement .team-intro {
     display: flex;
@@ -285,6 +306,7 @@ main {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    gap: 5px;
 }
 
 .team-gallery{
@@ -292,16 +314,14 @@ main {
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
+    margin: 1rem;
+    width: 100%;
 }
 
 h1, h2, h3, p{
     text-align: center;
 }
 
-h1, h2, h3{
-    text-decoration: underline var(--white);
-    margin-bottom: 0.5rem;
-}
 
 .team-member img{
     width: 100%;
@@ -309,6 +329,13 @@ h1, h2, h3{
     padding: 0.5rem 0.8rem;
     box-shadow: 0 0 10px var(--tiny-color);
     margin-top: 1rem;
+}
+
+.commitment{
+    margin: 1rem 1rem;
+    padding: 1rem;
+    box-shadow:  0 0 7px var(--tiny1-color);
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -466,15 +493,16 @@ footer {
         /* Left column: Founder and her story */
         .team-intro {
             grid-column: 1 / 2;
-            grid-row: 1 / 5;
+            grid-row: 1 / 4;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-    
-        .team-intro > div {
-            margin-bottom: 20px;
+
+        .about-us-section h1{
+            margin-bottom: 1rem;
         }
+    
     
         /* Right column: Mission, Vision, and Our Story */
         .mission-vision {
@@ -482,17 +510,17 @@ footer {
             grid-row: 1 / 5;
             display: grid;
             grid-template-rows: repeat(3, 1fr);
-            gap: 20px;
         }
     
         .mission,
         .vision,
         .team-description {
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
+            padding: 5px;
+            background-color: var(--tiny1-color);
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: var(--white);
+            margin: 0;
         }
         
 }
