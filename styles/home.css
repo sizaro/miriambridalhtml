@@ -24,7 +24,7 @@ body{
 .header-container {
     position: relative;
     display: block;
-    background: url(../images/hero1.webp) no-repeat center/cover;
+    background: url(../customers/hero1.webp) no-repeat center/cover;
     height: 80vh;
     width: 100%;
 }
@@ -45,7 +45,6 @@ header{
 .business-name {
     color: var(--white);
     width: auto;
-    background-color: black;
     text-align: center;
 }
 
@@ -79,8 +78,9 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: black;
+    background-color: var(--secondary-color);
     margin-top: 4rem;
+    padding: 0 1rem;
 }
 
 .humburger {
@@ -90,6 +90,7 @@ header{
     margin-top: -1.4rem;
     height: 1.7rem;
     color:var(--secondary-color);
+    margin-right: 0.5rem;
 }
 
 .span1, .span2, .span3 {
@@ -136,6 +137,8 @@ header{
     padding: 0.1rem;
     color: var(--white);
     border: 1px solid gold;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
     
 }
 
@@ -519,7 +522,7 @@ footer {
     .header-container {
         position: relative;
         display: block;
-        background: url(../images/hero1.webp) no-repeat center/cover;
+        background: url(../customers/hero1.webp) no-repeat center/cover;
         height: 80vh;
         width: 100%;
     }
