@@ -21,42 +21,33 @@ body{
 }
 
 /* Header Container */
-.header-container {
-    position: relative;
-    display: block;
-    background: url(../customers/hero1.webp) no-repeat center/cover;
-    height: 80vh;
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
+    background: url(../customers/hero1.webp) no-repeat center/cover;
+    height: 70vh;
 }
 
 li a.home{
-    text-decoration:3px underline var(--tiny1-color);
+    text-decoration:3px underline var(--white);
     padding-bottom: 1rem;
 }
 
-header{
+.business-name{
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.business-name {
-    color: var(--white);
-    width: auto;
+    font-size: 1rem;
+    padding: 0.6rem 0.1rem 0.6rem 0.1rem;
+    border: 0.5px solid white;
     text-align: center;
 }
-
-.business-name1 {
+.business-name1{
     display: none;
-    color: var(--white);
-    width: auto;
-    text-align: center;
-}
-
-
-.business-name h1{
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem 0.2rem;
@@ -64,22 +55,19 @@ header{
 
 .business-logo {
     width: 60px;
+    height: 100%;
 }
-
-/**curved text*/
 
 
 
 /* Top Header */
 .top-header {
-    position:absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: var(--secondary-color);
-    margin-top: 4rem;
     padding: 0 1rem;
 }
 
@@ -87,10 +75,9 @@ header{
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin-top: -1.4rem;
     height: 1.7rem;
     color:var(--secondary-color);
-    margin-right: 0.5rem;
+    padding: 0.5rem;
 }
 
 .span1, .span2, .span3 {
@@ -100,35 +87,10 @@ header{
     margin: 3px 0;
 }
 
-/* Bottom Header */
-
-.bottom-header {
-    position: absolute;
-    display: none;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: var(--secondary-color);
-    margin-top: 8.7rem;
-
-}
-.bottom-header.active {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: var(--secondary-color);
-    margin-top: 8.7rem;
-    opacity: 0.9;
-
-}
-
 
 .close-humburger{
-    position: relative;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -137,8 +99,6 @@ header{
     padding: 0.1rem;
     color: var(--white);
     border: 1px solid gold;
-    margin-right: 0.5rem;
-    margin-top: 1.5rem;
     
 }
 
@@ -165,16 +125,38 @@ header{
     background-color: var(--accent-color);
 
 }
+nav.active{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    height: 70vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+    opacity: 0.95;
+}
+
+nav{
+    display: none;
+    justify-content: space-between;
+    padding: 10px 20px;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    height: 70vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+}
 
 
 .navigation ul {
-    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    left: 0;
-    background-color: var(--secondary-color);
     width: 100%;
+    padding-right: 0.5rem;
    
 }
 
@@ -410,6 +392,11 @@ main {
 }
 
 .testimony1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
     box-shadow: 0 0 10px var(--secondary-color);
     padding: 20px;
     background-color: var(--white);
@@ -483,6 +470,11 @@ main {
 }
 
 .post1, .post2, .post3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
     box-shadow: 0 0 10px var(--primary-color);
     padding: 20px;
     background-color: var(--tiny1-color);
@@ -565,9 +557,6 @@ footer {
         width: 60px;
     }
 
-    /**curved text*/
-
-
 
     /* Top Header */
     .top-header {
@@ -578,7 +567,6 @@ footer {
         align-items: center;
         width: 100%;
         background-color: black;
-        margin-top: 4rem;
     }
 
     .humburger {

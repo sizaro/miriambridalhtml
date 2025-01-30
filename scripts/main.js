@@ -1,11 +1,11 @@
 const humburger = document.querySelector(".humburger");
-const bottomHeader = document.querySelector(".bottom-header");
+const navCont = document.querySelector("nav");
 const closeHumburger = document.querySelector(".close-humburger");
 
 humburger.addEventListener("click", () =>{
-    bottomHeader.classList.add("active")
+    navCont.classList.add("active")
 })
 
 closeHumburger.addEventListener("click", () =>{
-    bottomHeader.classList.remove("active")
+    navCont.classList.remove("active")
 })
