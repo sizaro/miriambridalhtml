@@ -862,6 +862,7 @@ footer {
     /**Our Work*/
 
     .masonry-gallery {
+        display: block;
         column-count: 2; /* Single column on small screens */
     }
 
