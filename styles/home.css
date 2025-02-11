@@ -194,6 +194,7 @@ nav{
     background-color: #0056b3;
     height: fit-content;
     border: none;
+    border-radius: 10px;
 }
 
 .navigation a {
