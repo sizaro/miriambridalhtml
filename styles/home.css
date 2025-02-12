@@ -159,7 +159,7 @@ nav.active{
     padding: 10px 20px;
     backdrop-filter: blur(1px);
     z-index: 1;
-    height: 70vh;
+    height: 50vh;
     width: 100%;
     border: 1px solid white;
     opacity: 0.95;
@@ -592,8 +592,6 @@ footer {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
     padding: 20px;
     text-align: center;
     height: 200px;
@@ -607,6 +605,7 @@ footer {
          /* Header Styles */
          /* Header Styles */
 
+
         header {
             color: white;
             display: flex;
@@ -616,6 +615,7 @@ footer {
             width: 100%;
             background: url(../customers/hero1.webp) no-repeat center/cover;
             height: 70vh;
+            overflow-x: hidden;
         }
     
         li a.home{
@@ -628,32 +628,34 @@ footer {
     
         .business-name>a{
             display: flex;
-            font-size: 1.05rem;
-            padding: 0.6rem 0.1rem 0.6rem 0.1rem;
-            border: 0.1px solid white;
+            font-size: 0.6rem;
+            padding: 0.3rem 0.1rem 0.6rem 0.1rem;
             text-align: center;
             text-decoration: none;
             color: var(--white);
         
         }
     
+        .business-logo-tag{
+            width: 90px;
+            height: 70px;
+            margin-top: 0;
+        }
         .business-logo {
-            width: 80px;
-            height: 60px;
+            width: 90px;
+            height: 70px;
         }
     
     
     
         /* Top Header */
         .top-header {
-            position: unset;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: self-start;
+            align-items: flex-start;
             width: 100%;
-            padding-right: 0;
-            height: 100%;
+            padding-right: 0rem;
         }
     
         .humburger {
@@ -729,7 +731,6 @@ footer {
             display: flex;
             flex-direction: row;
             gap: 10px;
-            padding-right: 0.5rem;
         
         }
     
@@ -746,7 +747,7 @@ footer {
         .navigation a {
             text-decoration: none;
             color: var(--white);
-            font-size: 1rem;
+            font-size: 1.08rem;
             text-shadow: 1px 0px 0px var(--tiny1-color);
         }
     /* Main Content */
@@ -1030,9 +1031,6 @@ footer {
     }
 
     .business-name>a{
-        position: absolute;
-        top: 0;
-        right: 8rem;
         display: flex;
         font-size: 1rem;
         padding: 0.6rem 0.1rem 0.6rem 0.1rem;
@@ -1042,8 +1040,6 @@ footer {
     }
 
     .business-logo {
-        position: absolute;
-        top: 0;
         width: 150px;
         height: 100px;
     }
@@ -1052,12 +1048,11 @@ footer {
 
     /* Top Header */
     .top-header {
-        position: relative;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: flex-start;
         width: 100%;
-        padding-right: 1rem;
+        padding-right: 0rem;
         height: 100%;
     }
 
