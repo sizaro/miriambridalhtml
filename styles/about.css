@@ -106,9 +106,10 @@ li a.about{
     flex-direction: column;
     width: 1.2rem;
     height: 1.2rem;
-    padding: 0.1rem;
+    margin: 0.1rem 0.5rem 0.1rem 0.1rem;
     color: var(--tiny1-color);
     border: 1px solid var(--white);
+    padding: 0.1rem;
     
 }
 
@@ -392,20 +393,25 @@ footer {
         align-items: start;
         flex-direction: row;
         width: 100%;
-        height: 20vh;
+        overflow-x: hidden;
     }
 
     .business-name>a{
         display: flex;
-        font-size: 1rem;
+        font-size: 0.6rem;
         padding: 0.6rem 0.1rem 0.6rem 0.1rem;
         border: none;
         text-align: center;
         border: none;
     }
 
+
+    .business-logo-tag{
+            width: 130px;
+            height: 100px;
+    }
     .business-logo {
-        width: 150px;
+        width: 130px;
         height: 100px;
     }
 
@@ -418,7 +424,6 @@ footer {
         align-items: flex-start;
         width: 100%;
         padding-right: 0rem;
-        height: 100%;
     }
 
     .humburger {
@@ -493,8 +498,7 @@ footer {
     .navigation ul {
         display: flex;
         flex-direction: row;
-        gap: 20px;
-        padding-right: 0.5rem;
+        gap: 10px;
     
     }
 
@@ -507,7 +511,7 @@ footer {
     .navigation a {
         text-decoration: none;
         color: var(--white);
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         text-shadow: 1px 0px 0px var(--tiny1-color);
     }
 
@@ -529,20 +533,21 @@ footer {
     }
     
     .ourFounder-container {
-        grid-column: span 6; /* Spans 5 of the 12 columns */
-        grid-row: 1 / 3; /* Spans 2 rows */
+        grid-column: span 12; /* Spans 5 of the 12 columns */
+        grid-row: 1 /2; /* Spans 2 rows */
         background-color: #f5f5f5;
-        padding: 5px;
+        padding: 1px;
         border-radius: 10px;
     }
     
     .founders-content {
-        grid-column: span 5; /* Spans the remaining 7 columns */
-        grid-row: 1 / 3; /* Aligns in the first row */
+        grid-column: span 12; /* Spans the remaining 7 columns */
+        grid-row: 2 /3 ; /* Aligns in the first row */
         background-color: #ffffff;
-        padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0.4rem;
+        margin-top: -2rem;
     }
     
     .founders-title {
@@ -552,7 +557,6 @@ footer {
     
     .founder-image {
         width: 100%;
-        border-radius: 10px;
         max-width: 500px;
     }
     .founder-image img {
@@ -565,21 +569,24 @@ footer {
     .mission-vision {
         display: grid;
         grid-template-columns: repeat(12, 1fr); /* 12 equal columns for control */
-        grid-template-rows: auto; /* Single row layout */
+        grid-template-rows: repeat(2, 1fr); /* Single row layout */
         gap: 20px; /* Space between items */
         padding: 20px;
     }
     
     .team-description {
-        grid-column: span 5; /* Takes up 5 columns */
+        grid-column: span 11; /* Takes up 5 columns */
+        grid-row: 1/2;
         background-color: #f5f5f5;
-        padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: -6rem;
+        padding: 0.5rem;
     }
     
     .mission {
-        grid-column: span 3; /* Takes up 3 columns */
+        grid-column: span 6; /* Takes up 3 columns */
+        grid-row: 2/3;
         background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
@@ -587,7 +594,8 @@ footer {
     }
     
     .vision {
-        grid-column: span 4; /* Takes up the remaining 4 columns */
+        grid-column: span 5; /* Takes up the remaining 4 columns */
+        grid-row: 2/3;
         background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
@@ -606,8 +614,277 @@ footer {
         color: #555;
     }
     
-    
+    footer p{
+        color: var(--white);
+    }
 
 
         
+}
+
+@media (min-width:768px){
+
+    .business-name>a{
+        display: flex;
+        font-size: 1.1rem;
+        padding: 0.1rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--white);
+    
+    }
+    
+    
+    .business-logo-tag{
+        width: 110px;
+        height: 100px;
+        margin-top: 0;
+    }
+    .business-logo {
+        width: 110px;
+        height: 100px;
+    }
+
+    .team-intro {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr) ; /* 12 equal columns */
+        grid-template-rows: repeat(2, 1fr); /* Automatically adjust rows */
+        gap: 20px; /* Space between grid items */
+        grid-auto-flow: row; /* Flow items in rows */
+        width: 100%;
+    }
+    
+    .ourFounder-container {
+        grid-column: span 12; /* Spans 5 of the 12 columns */
+        grid-row: 1 /2; /* Spans 2 rows */
+        background-color: #f5f5f5;
+        padding: 1px;
+        border-radius: 10px;
+    }
+    
+    .founders-content {
+        grid-column: span 12; /* Spans the remaining 7 columns */
+        grid-row: 2 /3 ; /* Aligns in the first row */
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0.4rem;
+        margin-top: -2rem;
+    }
+    
+    .founders-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .founder-image {
+        width: 100%;
+        max-width: 500px;
+    }
+    .founder-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+
+    .mission-vision {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); /* 12 equal columns for control */
+        grid-template-rows: repeat(2, 1fr); /* Single row layout */
+        gap: 20px; /* Space between items */
+        padding: 20px;
+    }
+    
+    .team-description {
+        grid-column: span 11; /* Takes up 5 columns */
+        grid-row: 1/2;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: -6rem;
+        padding: 0.5rem;
+    }
+    
+    .mission {
+        grid-column: span 6; /* Takes up 3 columns */
+        grid-row: 2/3;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .vision {
+        grid-column: span 5; /* Takes up the remaining 4 columns */
+        grid-row: 2/3;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: #333;
+    }
+    
+    p {
+        line-height: 1.6;
+        font-size: 1rem;
+        color: #555;
+    }
+    
+    footer p{
+        color: var(--white);
+    }
+    
+}
+
+@media (min-width:992px) {
+
+    .top-header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        padding-right: 3rem;
+    }
+
+    .business-logo-tag{
+        width: 150px;
+        height: 100px;
+        margin-top: 0;
+    }
+    .business-logo {
+        width: 150px;
+        height: 100px;
+    }
+    
+    
+    .navigation ul li{
+        padding: 0.1rem 0.5rem;
+        list-style: none;
+    }
+    
+    .navigation ul li:hover{
+        background-color: #0056b3;
+        height: fit-content;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1.2rem;
+        padding-right: 1rem;
+    }
+
+    .business-name>a{
+        display: flex;
+        font-size: 1rem;
+        padding: 0.1rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--white);
+    
+    }
+    
+    .team-intro {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr) ; /* 12 equal columns */
+        grid-row: repeat(2,1fr); /* Automatically adjust rows */
+        gap: 20px; /* Space between grid items */
+        grid-auto-flow: row; /* Flow items in rows */
+        width: 100%;
+    }
+    
+    .ourFounder-container {
+        grid-column: span 6; /* Spans 5 of the 12 columns */
+        grid-row: 1/3; /* Spans 2 rows */
+        background-color: #f5f5f5;
+        padding: 1px;
+        border-radius: 10px;
+    }
+    
+    .founders-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-column: span 6; /* Spans the remaining 7 columns */
+        grid-row: 1 /3 ; /* Aligns in the first row */
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        height: 100%;
+
+    }
+    
+    .founders-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .founder-image {
+        width: 100%;
+        max-width: 500px;
+    }
+    .founder-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+
+    .mission-vision {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); /* 12 equal columns for control */
+        grid-template-rows: repeat(2, 1fr); /* Single row layout */
+        gap: 20px; /* Space between items */
+        padding: 20px;
+    }
+    
+    .team-description {
+        grid-column: span 4; /* Takes up 5 columns */
+        grid-row: 1/3;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        margin-top: 0;
+    }
+    
+    .mission {
+        grid-column: span 4; /* Takes up 3 columns */
+        grid-row: 1/3;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .vision {
+        grid-column: span 4; /* Takes up the remaining 4 columns */
+        grid-row: 1/3;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: #333;
+    }
+    
+    p {
+        line-height: 1.6;
+        font-size: 1rem;
+        color: #555;
+    }
 }
