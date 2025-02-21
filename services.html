@@ -7,115 +7,145 @@
     <link rel="stylesheet" href="styles/services.css">
 </head>
 <body>
-    <div class="header-container"> 
-        <h1 class="business-name1">Miriam Bridal Services</h1>
-        <header>
-            <div class="top-header">
-                <img src="images/miriam_bridal_services_logo.png" alt="miriam_bridal_services_logo" title="miriam_bridal_services_logo" class="business-logo">
-                <div class="business-name"><h1>Miriam Bridal Services</h1></div>
-                <div class="humburger" title="menu">
-                    <span class="span1"></span>
-                    <span class="span2"></span>
-                    <span class="span3"></span>
-                </div>
+    <header>
+        <div class="top-header">
+            <a class="business-logo-tag" href="./index.html"><img src="images/miriam_bridal_services_logo.png" alt="miriam_bridal_services_logo" title="miriam_bridal_services_logo" class="business-logo"></a>
+            <div class="business-name"><a href="./index.html"><h1>Miriam Bridal Services</h1></a></div>
+            <button class="action"><a href="./contact.html">Prove Us</a></button>
+            <div class="humburger" title="menu">
+                <span class="span1"></span>
+                <span class="span2"></span>
+                <span class="span3"></span>
             </div>
-            <div class="bottom-header">
-                <nav class="navigation">
-                    <ul>
-                        <li><a href="index.html" class="home">Home</a></li>
-                        <li><a href="about.html" class="about">About</a></li>
-                        <li><a href="services.html" class="services">Services</a></li>
-                        <li><a href="gallery.html" class="gallery">Gallery</a></li>
-                        <li><a href="contact.html" class="contact">Contact</a></li>
-                        <li><a href="#" class="admin">Admin</a></li>
-                    </ul>
-                </nav>
+        </div>
+        <nav class="navigation">
+                <ul>
+                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="about.html" class="about">About</a></li>
+                    <li><a href="services.html" class="services">Services</a></li>
+                    <li><a href="gallery.html" class="gallery">Gallery</a></li>
+                    <li><a href="contact.html" class="contact">Contact</a></li>
+                </ul>
                 <div class="close-humburger" title="close">
                     <span class="xspan1"></span>
                     <span class="xspan2"></span>
                 </div>
-            </div>
-        </header>
-        
-    </div>
+        </nav>
+    </header>       
 
     <main>
-        <h1>Our Services</h1>
+        <h1 class="heading1">Our Services</h1>
         <section class="services-wrapper">
 
             <!-- Bridal Hair Styling Section -->
-            <section class="service-item" id="bridal-hair-styling">
-                <img src="images/bridal hair style.jpg" alt="Bridal Hair Styling">
-                <h2>Bridal Hair Styling</h2>
-                <p>Our customized wedding hairstyles range from intricate updos to elegant braids and flowing curls. Our goal is to ensure you have the perfect look for your special day.</p>
-                <p>We start with an in-depth consultation to understand your vision, dress style, and theme. From there, we create a style tailored to your preferences, using professional-grade tools and products to guarantee durability and comfort throughout the event.</p>
+            <section class="service-item1" id="bridal-hair-styling">
+                <div class="service-item1-img"><img src="images/bridal hair style.jpg" alt="Bridal Hair Styling"></div>
+                <div class="service-item1-description">
+                    <h2>Bridal Hair Styling</h2>
+                    <p>Our customized wedding hairstyles range from intricate updos to elegant braids and flowing curls. Our goal is to ensure you have the perfect look for your special day. <br>We start with an in-depth consultation to understand your vision, dress style, and theme. From there, we create a style tailored to your preferences, using professional-grade tools and products to guarantee durability and comfort throughout the event.</p>
+                </div>
             </section>
 
-            <!-- Bridal Makeup Section -->
-            <section class="service-item" id="bridal-makeup">
-                <img src="images/bridal hair style2.jpg" alt="Bridal Makeup">
-                <h2>Bridal Makeup</h2>
-                <p>Our bridal makeup services are designed to highlight your natural beauty with a flawless, long-lasting finish.</p>
-                <p>Whether you prefer a bold, glamorous look or something soft and subtle, our makeup artists use high-quality, waterproof products to ensure your look stays intact from ceremony to reception. Pre-wedding trials are available to perfect your chosen style.</p>
-            </section>
+            <div class="services-wrapper2">
+                    <!-- Bridal Makeup Section -->
+                <section class="service-item2" id="bridal-makeup">
+                    <div class="service-item2-img"><img src="images/bridal hair style2.jpg" alt="Bridal Makeup"></div>
+                    <div class="service-item2-description">
+                        <h2>Bridal Makeup</h2>
+                        <p>Our bridal makeup services are designed to highlight your natural beauty with a flawless, long-lasting finish. <br>Whether you prefer a bold, glamorous look or something soft and subtle, our makeup artists use high-quality, waterproof products to ensure your look stays intact from ceremony to reception. Pre-wedding trials are available to perfect your chosen style.</p></div>
+                </section>
 
-            <!-- Mobile Services Section -->
-            <section class="service-item" id="bridal-mobile-services">
-                <img src="images/on_site_services1.jpg" alt="Mobile Services">
-                <h2>Mobile Services & On-Site Availability</h2>
-                <p>Enjoy the convenience of our mobile services, bringing professional hairstyling and makeup directly to your venue or home.</p>
-                <p>Our team ensures every member of your bridal party is camera-ready with seamless touch-ups throughout the day, making your experience stress-free.</p>
-            </section>
+                <!-- Mobile Services Section -->
+                <section class="service-item3" id="bridal-mobile-services">
+                    <div class="service-item3-img"> 
+                        <img src="images/on_site_services1.jpg" alt="Mobile Services">
+                    </div>
+                    <div class="service-item3-description">
+                        <h2>Mobile Services & On-Site Availability</h2>
+                        <p>Enjoy the convenience of our mobile services, bringing professional hairstyling and makeup directly to your venue or home. <br>Our team ensures every member of your bridal party is camera-ready with seamless touch-ups throughout the day, making your experience stress-free.</p>
+                    </div>
+                </section>
 
-            <!-- Custom Bridal Packages Section -->
-            <section class="service-item" id="bridal-custom-packages">
-                <img src="images/bridal group package1.jpg" alt="Custom Bridal Packages">
-                <h2>Custom Bridal Packages</h2>
-                <p>We offer tailored packages that combine makeup, hairstyling, and additional beauty treatments to suit your unique needs.</p>
-                <p>Customize your package with options like facials, lash extensions, or even group services for your bridal party to ensure everyone feels special.</p>
-            </section>
+                <!-- Custom Bridal Packages Section -->
+                <section class="service-item4" id="bridal-custom-packages">
+                    <div class="service-item4-img">
+                        <img src="images/bridal group package1.jpg" alt="Custom Bridal Packages">
+                    </div>
+                    <div class="service-item4-description">
+                        <h2>Custom Bridal Packages</h2>
+                        <p>We offer tailored packages that combine makeup, hairstyling, and additional beauty treatments to suit your unique needs. <br>Customize your package with options like facials, lash extensions, or even group services for your bridal party to ensure everyone feels special.</p>     
+                    </div>
+                </section>
+            </div>
 
-            <!-- Bridal Beauty Prepping Section -->
-            <section class="service-item" id="bridal-beauty-prepping">
-                <img src="images/bridal prep 1.jpg" alt="Bridal Beauty Prepping">
-                <h2>Bridal Beauty Prepping</h2>
-                <p>Prepare for your wedding day with our pre-wedding skincare treatments, body scrubs, and wellness consultations.</p>
-                <p>We focus on enhancing your natural glow, using top-tier products and personalized care to leave you feeling rejuvenated and radiant.</p>
-            </section>
+            <div class="services-paracontainer1">
+                <p>At Miriam Bridal Services, we believe that every bride deserves to feel confident, radiant, and effortlessly beautiful on her special day. Our team is dedicated to understanding your vision and bringing it to life with precision and care. From the first consultation to the final touches, we ensure a seamless and enjoyable experience. With years of expertise in bridal beauty, we go beyond just styling—we create memories that last a lifetime.</p>
+            </div>
 
-            <!-- Bridal Lessons Section -->
-            <section class="service-item" id="bridal-lessons">
-                <img src="images/bridal hair style8.jpg" alt="Bridal Lessons">
-                <h2>Bridal Lessons</h2>
-                <p>Discover the art of bridal beauty with our comprehensive lessons designed for anyone passionate about makeup, hairstyling, and wedding preparations. Whether you're an aspiring professional or a bride-to-be, we have the right course for you.</p>
-                <p>Our lessons cover a wide range of skills, including flawless makeup techniques, intricate hairstyling, skincare routines, and accessory selection. Learn directly from seasoned professionals and gain confidence in creating breathtaking looks.</p>
-                <p>All sessions are hands-on and personalized, ensuring you acquire practical knowledge and tips tailored to your goals. Join us and take the first step toward mastering bridal beauty!</p>
-            </section>
+            <div class="services-wrapper3">
+                    <!-- Bridal Beauty Prepping Section -->
+                <section class="service-item5" id="bridal-beauty-prepping">
+                    <div class="service-item5-img">
+                        <img src="images/bridal prep 1.jpg" alt="Bridal Beauty Prepping">
+                    </div>
+                    <div class="service-item5-description">
+                        <h2>Bridal Beauty Prepping</h2>
+                        <p>Prepare for your wedding day with our pre-wedding skincare treatments, body scrubs, and wellness consultations. <br>We focus on enhancing your natural glow, using top-tier products and personalized care to leave you feeling rejuvenated and radiant.</p>
+                    </div>                    
+                </section>
+
+                <!-- Bridal Lessons Section -->
+                <section class="service-item6" id="bridal-lessons">
+                    <div class="service-item6-img">
+                        <img src="images/bridal hair style8.jpg" alt="Bridal Lessons">
+                    </div>
+                    <div class="service-item6-description">
+                        <h2>Bridal Lessons</h2>
+                    <p>Discover the art of bridal beauty with our comprehensive lessons designed for anyone passionate about makeup, hairstyling, and wedding preparations. Whether you're an aspiring professional or a bride-to-be, we have the right course for you. <br>Our lessons cover a wide range of skills, including flawless makeup techniques, intricate hairstyling, skincare routines, and accessory selection. Learn directly from seasoned professionals and gain confidence in creating breathtaking looks. <br>All sessions are hands-on and personalized, ensuring you acquire practical knowledge and tips tailored to your goals. Join us and take the first step toward mastering bridal beauty!</p>
+                    </div>                    
+                </section>
 
 
-            <!-- Bridal Party Services Section -->
-            <section class="service-item" id="bridal-party-services">
-                <img src="images/bridal group package1.jpg" alt="Bridal Party Services">
-                <h2>Bridal Party Services</h2>
-                <p>We cater to bridesmaids, mothers, and other family members with hairstyling and makeup services tailored to their preferences.</p>
-                <p>Group bookings are available, ensuring a cohesive and stunning look for everyone involved.</p>
-            </section>
+                <!-- Bridal Party Services Section -->
+                <section class="service-item7" id="bridal-party-services">
+                    <div class="service-item7-img">
+                        <img src="images/bridal group package1.jpg" alt="Bridal Party Services">
+                    </div>
+                    <div class="service-item7-description">
+                        <h2>Bridal Party Services</h2>
+                        <p>We cater to bridesmaids, mothers, and other family members with hairstyling and makeup services tailored to their preferences. <br>Group bookings are available, ensuring a cohesive and stunning look for everyone involved.</p>
+                    </div>                    
+                </section>
 
-            <!-- Bridal Beauty Enhancements Section -->
-            <section class="service-item" id="bridal-beauty-enhancements">  
-                <img src="images/bridal enhancements2.jpg" alt="Bridal Beauty Enhancements">
-                <h2>Bridal Beauty Enhancements</h2>
-                <p>Enhance your wedding look with additional services such as eyelash extensions, eyebrow shaping, teeth whitening, and nail art.</p>
-                <p>These finishing touches add sophistication and elegance to your overall appearance.</p>
-            </section>
+            </div>
 
-            <!-- Destination Wedding Beauty Section -->
-            <section class="service-item" id="bridal-destination-wedding">
-                <img src="images/bridal enhancement mobile.jpg" alt="Destination Wedding Beauty">
-                <h2>Destination Wedding Beauty</h2>
-                <p>Our team is equipped to handle beauty services for destination weddings, ensuring a flawless look no matter the location.</p>
-                <p>We provide travel-ready solutions to keep your hair and makeup perfect, regardless of climate or setting.</p>
-            </section>
+            <div class="services-wrapper4">
+                            <!-- Bridal Beauty Enhancements Section -->
+                <section class="service-item8" id="bridal-beauty-enhancements">  
+                    <div class="service-item8-img">
+                        <img src="images/bridal enhancements2.jpg" alt="Bridal Beauty Enhancements">
+                    </div>
+                    <div class="service-item8-description">
+                        <h2>Bridal Beauty Enhancements</h2>
+                        <p>Enhance your wedding look with additional services such as eyelash extensions, eyebrow shaping, teeth whitening, and nail art. <br>These finishing touches add sophistication and elegance to your overall appearance.</p>
+                    </div>
+                </section>
+
+                <!-- Destination Wedding Beauty Section -->
+                <section class="service-item9" id="bridal-destination-wedding">
+                    <div class="service-item9-img">
+                        <img src="images/bridal enhancement mobile.jpg" alt="Destination Wedding Beauty">
+                    </div>
+                    <div class="service-item9-description">
+                        <h2>Destination Wedding Beauty</h2>
+                        <p>Our team is equipped to handle beauty services for destination weddings, ensuring a flawless look no matter the location. <br>We provide travel-ready solutions to keep your hair and makeup perfect, regardless of climate or setting.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="services-paracontainer1">
+                <p>Excellence is at the heart of everything we do. We stay ahead of the latest bridal trends, use high-quality products, and customize every service to suit your unique needs. Whether you’re looking for a timeless classic look or something bold and modern, our skilled professionals are here to make it happen. Your wedding day should be stress-free, and our goal is to provide a luxurious yet comfortable experience that allows you to shine with confidence.</p>
+            </div>
         </section>
     </main>
     <footer>
