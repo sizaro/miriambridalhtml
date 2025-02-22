@@ -162,6 +162,7 @@ nav.active{
     width: 100%;
     border: 1px solid white;
     opacity: 0.95;
+    height: fit-content;
 }
 
 nav{
@@ -1051,8 +1052,6 @@ footer {
             width: 90px;
             height: 70px;
         }
-    
-    
     
         /* Top Header */
         .top-header {
