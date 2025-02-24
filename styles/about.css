@@ -142,7 +142,7 @@ nav.active{
     padding: 10px 20px;
     backdrop-filter: blur(1px);
     z-index: 1;
-    height: 70vh;
+    height: fit-content;
     width: 100%;
     border: 1px solid white;
     opacity: 0.95;
@@ -577,7 +577,6 @@ footer {
     .team-description {
         grid-column: span 11; /* Takes up 5 columns */
         grid-row: 1/2;
-        background-color: #f5f5f5;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin-top: -6rem;
@@ -587,7 +586,6 @@ footer {
     .mission {
         grid-column: span 6; /* Takes up 3 columns */
         grid-row: 2/3;
-        background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -596,7 +594,6 @@ footer {
     .vision {
         grid-column: span 5; /* Takes up the remaining 4 columns */
         grid-row: 2/3;
-        background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -605,13 +602,11 @@ footer {
     h2 {
         margin-bottom: 10px;
         font-size: 1.5rem;
-        color: #333;
     }
     
     p {
         line-height: 1.6;
         font-size: 1rem;
-        color: #555;
     }
     
     footer p{
@@ -699,7 +694,6 @@ footer {
     .team-description {
         grid-column: span 11; /* Takes up 5 columns */
         grid-row: 1/2;
-        background-color: #f5f5f5;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin-top: -6rem;
@@ -709,7 +703,6 @@ footer {
     .mission {
         grid-column: span 6; /* Takes up 3 columns */
         grid-row: 2/3;
-        background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -718,7 +711,6 @@ footer {
     .vision {
         grid-column: span 5; /* Takes up the remaining 4 columns */
         grid-row: 2/3;
-        background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -727,13 +719,11 @@ footer {
     h2 {
         margin-bottom: 10px;
         font-size: 1.5rem;
-        color: #333;
     }
     
     p {
         line-height: 1.6;
         font-size: 1rem;
-        color: #555;
     }
     
     footer p{
@@ -790,6 +780,25 @@ footer {
         text-decoration: none;
         color: var(--white);
     
+    }
+
+    .about-us-section p{
+        width: 80%;
+        margin: 0.5rem auto;
+        padding: 1rem;
+        border: 1px solid var(--white);
+        font-size: 1rem;
+        border-radius: 10px;
+        font-size: 1.3rem;
+    }
+    
+    .about-us-section>h1{
+        margin-bottom: 1rem;
+        color: var(--white);
+        padding: 1.5rem 0.1rem;
+        width: auto;
+        margin: 0.1rem;
+        font-size: 1.5rem;
     }
     
     .team-intro {
@@ -851,7 +860,6 @@ footer {
     .team-description {
         grid-column: span 4; /* Takes up 5 columns */
         grid-row: 1/3;
-        background-color: #f5f5f5;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 0.5rem;
@@ -861,7 +869,6 @@ footer {
     .mission {
         grid-column: span 4; /* Takes up 3 columns */
         grid-row: 1/3;
-        background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -870,7 +877,6 @@ footer {
     .vision {
         grid-column: span 4; /* Takes up the remaining 4 columns */
         grid-row: 1/3;
-        background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -879,12 +885,10 @@ footer {
     h2 {
         margin-bottom: 10px;
         font-size: 1.5rem;
-        color: #333;
     }
     
     p {
         line-height: 1.6;
         font-size: 1rem;
-        color: #555;
     }
 }

@@ -375,7 +375,7 @@ main {
     max-width: 50rem;
     padding: 0.5rem;
     background-color: var(--tiny1-color);
-    color: var(--white);
+    color: var(--accent-color);
     text-align: center;
     margin-top: 0.6rem;
 }
@@ -386,8 +386,9 @@ main {
     margin-top: 0.6rem;
     text-align: center;
     padding: 0.2rem;
-    color: var(--tiny1-color);
+    color: #1c2a48;
     font-size: 1.08rem;
+    opacity: 0.9;
     
 }
 .service-item2:hover {
@@ -647,6 +648,8 @@ main {
     margin-top: 0.6rem;
     text-align: center;
     padding: 0.2rem;
+    color: #1c2a48;
+    font-size: 1.1rem;
 }
 .service-item3:hover {
     transform: translateY(-5px);
