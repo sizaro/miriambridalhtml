@@ -276,7 +276,10 @@ footer {
     height: 200px;
 }
 
-
+footer a{
+    text-decoration: none;
+    color: white;
+}
 
 
 

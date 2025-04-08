@@ -597,6 +597,30 @@ footer {
     height: 200px;
 }
 
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+
 
 @media (min-width:600px) {
 

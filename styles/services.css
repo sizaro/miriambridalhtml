@@ -856,6 +856,11 @@ footer {
     color: var(--white);
 }
 
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
 /* Media Queries */
 @media (min-width: 600px) {
 
